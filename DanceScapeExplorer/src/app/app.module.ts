@@ -13,6 +13,14 @@ import { ClassComponent } from './Front/body/class/class.component';
 import { ShowsComponent } from './Front/body/shows/shows.component';
 import { ShortCodeComponent } from './Front/body/short-code/short-code.component';
 import { ContactComponent } from './Front/body/contact/contact.component';
+import { AdminAllComponent } from './Back/admin-all/admin-all.component';
+import { AdminFooterComponent } from './Back/admin-footer/admin-footer.component';
+import { AdminHeaderComponent } from './Back/admin-header/admin-header.component';
+import { AdminSideBarComponent } from './Back/admin-side-bar/admin-side-bar.component';
+import { AdminHomeComponent } from './Back/admin/admin-home/admin-home.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +34,13 @@ import { ContactComponent } from './Front/body/contact/contact.component';
     ClassComponent,
     ShowsComponent,
     ShortCodeComponent,
-    ContactComponent
+    ContactComponent,
+    AdminAllComponent,
+    AdminFooterComponent,
+    AdminHeaderComponent,
+    AdminSideBarComponent,
+    AdminHomeComponent,
+
   ],
   imports: [
     BrowserModule,

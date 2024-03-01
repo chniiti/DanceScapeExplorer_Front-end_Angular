@@ -7,6 +7,8 @@ import { ClassComponent } from './Front/body/class/class.component';
 import { ShowsComponent } from './Front/body/shows/shows.component';
 import { ShortCodeComponent } from './Front/body/short-code/short-code.component';
 import { ContactComponent } from './Front/body/contact/contact.component';
+import { AdminAllComponent } from './Back/admin-all/admin-all.component';
+import { AdminHomeComponent } from './Back/admin/admin-home/admin-home.component';
 
 const routes: Routes = [
   { path:'DanceScape', component:AllTemplateComponent,
@@ -18,6 +20,11 @@ const routes: Routes = [
     {path: 'shortcode', component:ShortCodeComponent},
     {path: 'contact', component:ContactComponent}
   ]
+},
+{path: 'admin', component:AdminAllComponent,
+children:[
+  {path:'body', component:AdminHomeComponent}
+]
 }
 ];
 
